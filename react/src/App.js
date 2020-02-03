@@ -4,6 +4,8 @@ import PropsDefault from './propsDefault';
 import State from './state';
 import './App.css';
 import RenderizadoCondicional from './renderizadoCondicional';
+import Listas from './listas';
+import ListasObjetos from './listasObjetos';
 
 //const Hello = (props) => <h2>Bienvenidos a este curso {props.name}</h2>; 
 
@@ -58,7 +60,8 @@ function App() {
         <PropsDefault />
       </header>
       <RenderizadoCondicional />
-      <RenderizadoCondicional />
+      <Listas />
+      <ListasObjetos />
     </div>
   );
 }

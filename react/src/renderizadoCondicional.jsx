@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 
-class ComponentA extends Component {
+class LoginButton extends Component {
     render() {
-        return <p>Componente A</p>
+        return <button>Iniciar Sesión</button>
     }
 }
 
-class ComponentB extends Component {
+class LogoutButton extends Component {
     render() {
-        return <p>Componente B</p>
+        return (
+            <>
+                <p>Bienvenido, usuario!</p>
+                <button>Cerrar Sesión</button>
+            </>
+        )
     }
 }
 
@@ -23,18 +28,18 @@ export default class RenderizadoCondicional extends Component {
     constructor() {
         super();
         this.state = {
-            mostrarA: false
+            isUserLogged: true
         }
     }
 
     render() {
         // const conditionalComponent = this.state.mostrarA ? <ComponentA /> : <ComponentB />;
         return <>
-            <p>Renderizado Condicional</p>
+            <h2>Renderizado Condicional</h2>
             {
-                this.state.mostrarA 
-                ? <ComponentA /> 
-                : <ComponentB />
+                this.state.isUserLogged 
+                ? <LogoutButton /> 
+                : <LoginButton />
             }
         </>; 
     }
