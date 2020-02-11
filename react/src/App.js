@@ -9,6 +9,7 @@ import ListasObjetos from './listasObjetos';
 import Eventos from './eventos';
 import EventosBindeado from './eventosBindeado';
 import EventosArrowFunction from './eventosArrowFunctionRecommended';
+import Forms from './forms';
 
 //const Hello = (props) => <h2>Bienvenidos a este curso {props.name}</h2>; 
 
@@ -68,6 +69,7 @@ function App() {
       <Eventos />
       <EventosBindeado />
       <EventosArrowFunction />
+      <Forms />
     </div>
   );
 }
