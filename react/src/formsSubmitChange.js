@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 
-export default class FormsRefs extends PureComponent {
+export default class FormsSubmitChange extends PureComponent {
     
-    handleClick = (e) => {
+    handleSubmit = (e) => {
         e.preventDefault();
         console.log("this.inputName", this.inputName);
         const name = this.inputName.value;
@@ -10,10 +10,15 @@ export default class FormsRefs extends PureComponent {
         console.log({name, email});
     }
 
+    handleChange (e) {
+        console.log("handleChange");
+        console.log(e.target.checked);
+    }
+
     render() {
         return <div>
             <h4>Formularios - Refs</h4>
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <p>
                     <label htmlFor='name'>Nombre: </label>
                     <input 
@@ -30,7 +35,13 @@ export default class FormsRefs extends PureComponent {
                         placeholder='Introduce tu Twitter' 
                         ref={inputElement => this.inputTwitter = inputElement}/>
                 </p>
-                <button onClick={this.handleClick}>Enviar</button>
+                <p>
+                    <label>
+                        <input onChange={this.handleChange} type='checkbox'/>
+                        Accepted terms
+                    </label>
+                </p>
+                <button>Enviar</button>
             </form>
         </div>
     }

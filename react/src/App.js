@@ -11,6 +11,7 @@ import EventosBindeado from './eventosBindeado';
 import EventosArrowFunction from './eventosArrowFunctionRecommended';
 import Forms from './formsFor';
 import FormsRefs from './formsRefs';
+import FormsSubmitChange from './formsSubmitChange';
 
 //const Hello = (props) => <h2>Bienvenidos a este curso {props.name}</h2>; 
 
@@ -72,6 +73,7 @@ function App() {
       <EventosArrowFunction />
       <Forms />
       <FormsRefs />
+      <FormsSubmitChange />
     </div>
   );
 }
