@@ -14,6 +14,7 @@ import FormsRefs from './formsRefs';
 import FormsSubmitChange from './formsSubmitChange';
 import FormsControlledComponents from './formsControlledComponents';
 import ChildrenProps from './childrenProps';
+import ChildrenAndPropTypes from './childrenAndPropTypes';
 
 //const Hello = (props) => <h2>Bienvenidos a este curso {props.name}</h2>; 
 
@@ -78,6 +79,7 @@ function App() {
       <FormsSubmitChange />
       <FormsControlledComponents />
       <ChildrenProps />
+      <ChildrenAndPropTypes />
     </div>
   );
 }
