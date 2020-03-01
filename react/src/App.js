@@ -15,6 +15,8 @@ import FormsSubmitChange from './formsSubmitChange';
 import FormsControlledComponents from './formsControlledComponents';
 import ChildrenProps from './childrenProps';
 import ChildrenAndPropTypes from './childrenAndPropTypes';
+import Constructor from './lifecycleOfComponents/constructor';
+import Render from './lifecycleOfComponents/render';
 
 //const Hello = (props) => <h2>Bienvenidos a este curso {props.name}</h2>; 
 
@@ -80,6 +82,8 @@ function App() {
       <FormsControlledComponents />
       <ChildrenProps />
       <ChildrenAndPropTypes />
+      <Constructor />
+      <Render />
     </div>
   );
 }
