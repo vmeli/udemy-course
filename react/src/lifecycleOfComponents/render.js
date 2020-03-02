@@ -4,15 +4,16 @@ const HelloRender = (props) => <h1>Hola render!!!</h1>;
 
 class Render extends Component {
     constructor(props) {
-        console.log("constructor");
+        //console.log("constructor");
         super(props);
         this.state = { mensaje: 'otro mensaje' }
     }
     render() {
-        console.log("render");
+        //console.log("render");
         // a veces se utilza return null , ya sea para controlar evento del DOM como el scroll 
         // o para tener un sistema de tracking
         // el método render solo debe dibujar en pantalla la representación del componente
+        // no se debe llamar a setState, provocaría un loop infinito
         return [
             <h4 key='A'>Elemento DOM aquí</h4>,
             <HelloRender key='B'/>,
