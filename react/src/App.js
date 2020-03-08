@@ -19,6 +19,7 @@ import Constructor from './lifecycleOfComponents/constructor';
 import Render from './lifecycleOfComponents/render';
 import ComponentDidMount from './lifecycleOfComponents/componentDidMount';
 import Fetch from './lifecycleOfComponents/fetch';
+import ShouldComponentUpdate from './lifecycleOfComponents/shouldComponentUpdate';
 
 //const Hello = (props) => <h2>Bienvenidos a este curso {props.name}</h2>; 
 
@@ -88,6 +89,7 @@ function App() {
       <Render />
       <ComponentDidMount />
       <Fetch />
+      <ShouldComponentUpdate />
     </div>
   );
 }

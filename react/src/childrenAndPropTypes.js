@@ -47,7 +47,7 @@ class Article extends PureComponent {
 }
 
 // 1era Forma de usar PropTypes
-// Article.PropTypes = {
+// Article.propTypes = {
 //    author: PropTypes.string
 // }
 
