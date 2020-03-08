@@ -20,6 +20,7 @@ import Render from './lifecycleOfComponents/render';
 import ComponentDidMount from './lifecycleOfComponents/componentDidMount';
 import Fetch from './lifecycleOfComponents/fetch';
 import ShouldComponentUpdate from './lifecycleOfComponents/shouldComponentUpdate';
+import ShouldComponentUpdateWithPureComponent from './lifecycleOfComponents/shouldComponentUpdateWithPureComponent';
 
 //const Hello = (props) => <h2>Bienvenidos a este curso {props.name}</h2>; 
 
@@ -90,6 +91,7 @@ function App() {
       <ComponentDidMount />
       <Fetch />
       <ShouldComponentUpdate />
+      <ShouldComponentUpdateWithPureComponent />
     </div>
   );
 }
